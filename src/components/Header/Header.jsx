@@ -78,8 +78,8 @@ const Header = () => {
               initial={{ x: "100%" }}
               animate={{ x: 150 }}
               exit={{ x: "100%" }}
-              transition={{ duration: 0.3 }}
-              className="fixed top-0 left-0 h-screen w-64 bg-[#843618] shadow-lg z-50 p-6 flex flex-col space-y-6"
+              transition={{ duration: 0.6 }}
+              className="fixed top-0 left-0 h-screen w-64 bg-[#843618] dark:bg-gray-800 shadow-lg z-50 p-6 flex flex-col space-y-6"
             >
               <div className="flex justify-between items-center mb-6">
                 <Logo />
@@ -97,7 +97,9 @@ const Header = () => {
                     item.active && (
                       <li key={item.name}>
                         <motion.button
-                        whileHover={{scale:1.1, y:10}}
+                        whileHover={{scale:1.1, y:10, transition:{
+                          duration:0.6
+                        }}}
                           onClick={() => {
                             navigate(item.slug);
                             setOpen(false);

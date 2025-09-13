@@ -30,7 +30,7 @@ function Signup() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen bg-[#843618] my-8">
+    <div className="flex flex-col md:flex-row min-h-screen bg-[#843618] dark:bg-gray-900 my-8">
       <motion.div 
       initial={{y:-300, opacity:0}}
       animate={{y:-100, opacity:1}}
