@@ -1,4 +1,4 @@
-# 📝 Blog Application
+#Blog Application
 
 A modern blog platform built with **React**, **Tailwind CSS v4**, and **Appwrite**.  
 Users can **view all posts without login** and **create posts after authentication**.  
